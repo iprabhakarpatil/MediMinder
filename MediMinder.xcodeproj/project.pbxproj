@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		B0D8D53324C5774F00A77E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53224C5774F00A77E93 /* AppDelegate.swift */; };
 		B0D8D53524C5774F00A77E93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */; };
-		B0D8D53724C5774F00A77E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53624C5774F00A77E93 /* ViewController.swift */; };
-		B0D8D53A24C5774F00A77E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D8D53824C5774F00A77E93 /* Main.storyboard */; };
 		B0D8D53D24C5774F00A77E93 /* MediMinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53B24C5774F00A77E93 /* MediMinder.xcdatamodeld */; };
 		B0D8D53F24C5775300A77E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D8D53E24C5775300A77E93 /* Assets.xcassets */; };
 		B0D8D54224C5775300A77E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D8D54024C5775300A77E93 /* LaunchScreen.storyboard */; };
 		B0D8D54D24C5775300A77E93 /* MediMinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D54C24C5775300A77E93 /* MediMinderTests.swift */; };
 		B0D8D55824C5775400A77E93 /* MediMinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D55724C5775400A77E93 /* MediMinderUITests.swift */; };
+		B0F7D8AB24C57E6C00600D29 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8AA24C57E6C00600D29 /* BaseNavigationController.swift */; };
+		B0F7D8B224C5A58B00600D29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8B024C5A58B00600D29 /* HomeViewController.swift */; };
+		B0F7D8B324C5A58B00600D29 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */; };
+		B0F7D8B624C5A5B200600D29 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */; };
+		B0F7D8B724C5A5B200600D29 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		B0D8D52F24C5774F00A77E93 /* MediMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D8D53224C5774F00A77E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0D8D53624C5774F00A77E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B0D8D53924C5774F00A77E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0D8D53C24C5774F00A77E93 /* MediMinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediMinder.xcdatamodel; sourceTree = "<group>"; };
 		B0D8D53E24C5775300A77E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D8D54124C5775300A77E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,11 @@
 		B0D8D55324C5775400A77E93 /* MediMinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediMinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D8D55724C5775400A77E93 /* MediMinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediMinderUITests.swift; sourceTree = "<group>"; };
 		B0D8D55924C5775400A77E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F7D8AA24C57E6C00600D29 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		B0F7D8B024C5A58B00600D29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +112,6 @@
 				B0D8D56724C57B0300A77E93 /* Controllers */,
 				B0D8D56924C57B2100A77E93 /* Extensions */,
 				B0D8D56824C57B1500A77E93 /* Utilities */,
-				B0D8D53624C5774F00A77E93 /* ViewController.swift */,
-				B0D8D53824C5774F00A77E93 /* Main.storyboard */,
 				B0D8D53E24C5775300A77E93 /* Assets.xcassets */,
 				B0D8D54024C5775300A77E93 /* LaunchScreen.storyboard */,
 				B0D8D54324C5775300A77E93 /* Info.plist */,
@@ -144,6 +148,8 @@
 		B0D8D56624C57AF500A77E93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */,
+				B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +157,9 @@
 		B0D8D56724C57B0300A77E93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7D8AA24C57E6C00600D29 /* BaseNavigationController.swift */,
+				B0F7D8B024C5A58B00600D29 /* HomeViewController.swift */,
+				B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -277,7 +286,8 @@
 			files = (
 				B0D8D54224C5775300A77E93 /* LaunchScreen.storyboard in Resources */,
 				B0D8D53F24C5775300A77E93 /* Assets.xcassets in Resources */,
-				B0D8D53A24C5774F00A77E93 /* Main.storyboard in Resources */,
+				B0F7D8B324C5A58B00600D29 /* HomeViewController.xib in Resources */,
+				B0F7D8B724C5A5B200600D29 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D8D53724C5774F00A77E93 /* ViewController.swift in Sources */,
 				B0D8D53D24C5774F00A77E93 /* MediMinder.xcdatamodeld in Sources */,
+				B0F7D8B224C5A58B00600D29 /* HomeViewController.swift in Sources */,
 				B0D8D53324C5774F00A77E93 /* AppDelegate.swift in Sources */,
+				B0F7D8AB24C57E6C00600D29 /* BaseNavigationController.swift in Sources */,
+				B0F7D8B624C5A5B200600D29 /* HistoryViewController.swift in Sources */,
 				B0D8D53524C5774F00A77E93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B0D8D53824C5774F00A77E93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0D8D53924C5774F00A77E93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B0D8D54024C5775300A77E93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MediMinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MediMinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

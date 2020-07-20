@@ -11,13 +11,16 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    var tabbarController = UITabBarController()
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        setupTabBars()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = tabbarController
+        window!.makeKeyAndVisible()
+        window?.windowScene = windowScene
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -51,6 +54,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
+    func setupTabBars() {
+        let homeViewController = HomeViewController()
+        homeViewController.title = "Home"
+        homeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 0)
+        
+        let historyViewController = HistoryViewController()
+        historyViewController.title = "History"
+        historyViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+        
+        let viewControllers = [homeViewController, historyViewController]
+        tabbarController.viewControllers = viewControllers.map{
+            BaseNavigationController(rootViewController: $0)
+        }
+        
+    }
 
 }
 
