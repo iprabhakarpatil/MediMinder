@@ -9,22 +9,27 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var scoreTitleLabel: UILabel!
+    @IBOutlet weak var todaysScoreLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupUI() {
+        greetingLabel.text = Utils.greetingNow(for: Date()).label
+        scoreTitleLabel.text = "Score"
+        todaysScoreLabel.text = "30"
     }
-    */
+    
+    @IBAction func medicineTakenAction(_ sender: UIButton) {
+        
+    }
+    
 
 }

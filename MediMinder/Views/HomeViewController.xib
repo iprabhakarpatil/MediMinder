@@ -1,22 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MediMinder" customModuleProvider="target">
             <connections>
+                <outlet property="greetingLabel" destination="L4P-79-9iH" id="TmY-yl-ZPN"/>
+                <outlet property="scoreTitleLabel" destination="nFW-aS-KnO" id="1P7-jc-3Sj"/>
+                <outlet property="todaysScoreLabel" destination="ERH-qd-FcD" id="eoC-F6-oG2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWk-dM-jtB" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KjQ-yh-KPw">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="464"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4P-79-9iH">
+                                    <rect key="frame" x="126.5" y="0.0" width="67" height="128.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="29"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFW-aS-KnO">
+                                    <rect key="frame" x="133" y="128.5" width="54" height="106.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-qd-FcD">
+                                    <rect key="frame" x="126.5" y="235" width="67.5" height="169"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDS-cF-5rQ">
+                                    <rect key="frame" x="70" y="404" width="180" height="60"/>
+                                    <color key="backgroundColor" red="0.031372549019607843" green="0.41176470588235292" blue="0.44705882352941173" alpha="0.8374779929577465" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="180" id="L4y-y8-dCd"/>
+                                        <constraint firstAttribute="height" constant="60" id="d7h-3F-Tgc"/>
+                                    </constraints>
+                                    <state key="normal" title="Medicine Taken">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="medicineTakenAction:" destination="-1" eventType="touchUpInside" id="Bkg-OO-P9B"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KjQ-yh-KPw" secondAttribute="bottom" constant="16" id="IHh-EP-fLr"/>
+                        <constraint firstAttribute="trailing" secondItem="KjQ-yh-KPw" secondAttribute="trailing" id="RGQ-eG-akp"/>
+                        <constraint firstItem="KjQ-yh-KPw" firstAttribute="top" secondItem="zWk-dM-jtB" secondAttribute="top" id="fOV-HU-0jp"/>
+                        <constraint firstItem="KjQ-yh-KPw" firstAttribute="leading" secondItem="zWk-dM-jtB" secondAttribute="leading" id="vAY-IV-iN6"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zWk-dM-jtB" secondAttribute="trailing" id="3Rb-YD-weg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zWk-dM-jtB" secondAttribute="bottom" id="5Js-Hq-9ze"/>
+                <constraint firstItem="zWk-dM-jtB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YmX-60-0Pi"/>
+                <constraint firstItem="zWk-dM-jtB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="giC-mz-Rmk"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>
 </document>

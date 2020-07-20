@@ -19,6 +19,8 @@
 		B0F7D8B324C5A58B00600D29 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */; };
 		B0F7D8B624C5A5B200600D29 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */; };
 		B0F7D8B724C5A5B200600D29 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */; };
+		B0F7D8B924C5BCCE00600D29 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8B824C5BCCE00600D29 /* Utils.swift */; };
+		B0F7D8BB24C5C7A300600D29 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8BA24C5C7A300600D29 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		B0F7D8B824C5BCCE00600D29 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B0F7D8BA24C5C7A300600D29 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			children = (
 				B0D8D53224C5774F00A77E93 /* AppDelegate.swift */,
 				B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */,
+				B0F7D8B824C5BCCE00600D29 /* Utils.swift */,
+				B0F7D8BA24C5C7A300600D29 /* Enums.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -314,9 +320,11 @@
 			files = (
 				B0D8D53D24C5774F00A77E93 /* MediMinder.xcdatamodeld in Sources */,
 				B0F7D8B224C5A58B00600D29 /* HomeViewController.swift in Sources */,
+				B0F7D8B924C5BCCE00600D29 /* Utils.swift in Sources */,
 				B0D8D53324C5774F00A77E93 /* AppDelegate.swift in Sources */,
 				B0F7D8AB24C57E6C00600D29 /* BaseNavigationController.swift in Sources */,
 				B0F7D8B624C5A5B200600D29 /* HistoryViewController.swift in Sources */,
+				B0F7D8BB24C5C7A300600D29 /* Enums.swift in Sources */,
 				B0D8D53524C5774F00A77E93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
