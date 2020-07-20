@@ -101,8 +101,11 @@
 		B0D8D53124C5774F00A77E93 /* MediMinder */ = {
 			isa = PBXGroup;
 			children = (
-				B0D8D53224C5774F00A77E93 /* AppDelegate.swift */,
-				B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */,
+				B0D8D56524C57AE400A77E93 /* Models */,
+				B0D8D56624C57AF500A77E93 /* Views */,
+				B0D8D56724C57B0300A77E93 /* Controllers */,
+				B0D8D56924C57B2100A77E93 /* Extensions */,
+				B0D8D56824C57B1500A77E93 /* Utilities */,
 				B0D8D53624C5774F00A77E93 /* ViewController.swift */,
 				B0D8D53824C5774F00A77E93 /* Main.storyboard */,
 				B0D8D53E24C5775300A77E93 /* Assets.xcassets */,
@@ -129,6 +132,43 @@
 				B0D8D55924C5775400A77E93 /* Info.plist */,
 			);
 			path = MediMinderUITests;
+			sourceTree = "<group>";
+		};
+		B0D8D56524C57AE400A77E93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0D8D56624C57AF500A77E93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0D8D56724C57B0300A77E93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B0D8D56824C57B1500A77E93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B0D8D53224C5774F00A77E93 /* AppDelegate.swift */,
+				B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B0D8D56924C57B2100A77E93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
