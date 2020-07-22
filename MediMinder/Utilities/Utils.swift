@@ -25,4 +25,15 @@ final class Utils {
         }
     }
     
+    static func medicineScheduledTime(for dayTime: Greetings) -> String {
+        switch  dayTime {
+        case .morning:
+            return "11:00 AM"
+        case .noon, .afternoon:
+            return "2:00 PM"
+        case .evening:
+            return "8:00 PM"
+        }
+    }
+    
 }

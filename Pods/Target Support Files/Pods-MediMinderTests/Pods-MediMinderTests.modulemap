@@ -1,0 +1,6 @@
+framework module Pods_MediMinderTests {
+  umbrella header "Pods-MediMinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

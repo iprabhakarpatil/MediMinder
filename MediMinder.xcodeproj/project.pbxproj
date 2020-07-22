@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0437E2ED65896FA7C5C794F9 /* Pods_MediMinder_MediMinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE886C2078F0CDF5AAF59F9E /* Pods_MediMinder_MediMinderUITests.framework */; };
+		4E7C564CFB095C64D54BACA7 /* Pods_MediMinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CAD3992B8637712E13E627 /* Pods_MediMinderTests.framework */; };
+		B087253224C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087253024C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.swift */; };
+		B087253324C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B087253124C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.xib */; };
+		B087253624C63796007F8721 /* HistoryViewController +UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087253524C63796007F8721 /* HistoryViewController +UITableView.swift */; };
+		B094694F24C6D910003EA1DA /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094694E24C6D910003EA1DA /* DefaultsManager.swift */; };
+		B094695124C6D9D5003EA1DA /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094695024C6D9D5003EA1DA /* Medicine.swift */; };
+		B094695324C6DE81003EA1DA /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094695224C6DE81003EA1DA /* Date+.swift */; };
+		B09BEBF124C5E98A001C126C /* HistoryViewController+FSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BEBF024C5E98A001C126C /* HistoryViewController+FSCalendar.swift */; };
 		B0D8D53324C5774F00A77E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53224C5774F00A77E93 /* AppDelegate.swift */; };
 		B0D8D53524C5774F00A77E93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */; };
 		B0D8D53D24C5774F00A77E93 /* MediMinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D53B24C5774F00A77E93 /* MediMinder.xcdatamodeld */; };
@@ -21,6 +30,8 @@
 		B0F7D8B724C5A5B200600D29 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */; };
 		B0F7D8B924C5BCCE00600D29 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8B824C5BCCE00600D29 /* Utils.swift */; };
 		B0F7D8BB24C5C7A300600D29 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7D8BA24C5C7A300600D29 /* Enums.swift */; };
+		B0F7D8C324C5E84500600D29 /* Pods_MediMinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98D89A065B05983B78DC3D /* Pods_MediMinder.framework */; };
+		B0F7D8C424C5E84500600D29 /* Pods_MediMinder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98D89A065B05983B78DC3D /* Pods_MediMinder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +51,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B0F7D8C524C5E84500600D29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0F7D8C424C5E84500600D29 /* Pods_MediMinder.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E03E71EAFA4F9D0B3783B30 /* Pods-MediMinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinderTests.release.xcconfig"; path = "Target Support Files/Pods-MediMinderTests/Pods-MediMinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		21370FF14D5BA603C9D1C7EA /* Pods-MediMinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinder.release.xcconfig"; path = "Target Support Files/Pods-MediMinder/Pods-MediMinder.release.xcconfig"; sourceTree = "<group>"; };
+		2C98D89A065B05983B78DC3D /* Pods_MediMinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediMinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D31E37F6308BAEFA6E55B /* Pods-MediMinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinderTests.debug.xcconfig"; path = "Target Support Files/Pods-MediMinderTests/Pods-MediMinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C392FCB725DE490C7F419B9 /* Pods-MediMinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinder.debug.xcconfig"; path = "Target Support Files/Pods-MediMinder/Pods-MediMinder.debug.xcconfig"; sourceTree = "<group>"; };
+		7524B137FE81E0D697DFEC82 /* Pods-MediMinder-MediMinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinder-MediMinderUITests.release.xcconfig"; path = "Target Support Files/Pods-MediMinder-MediMinderUITests/Pods-MediMinder-MediMinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		754CD8CD11CACF1BA50BD4BD /* Pods-MediMinder-MediMinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediMinder-MediMinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-MediMinder-MediMinderUITests/Pods-MediMinder-MediMinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93CAD3992B8637712E13E627 /* Pods_MediMinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediMinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087253024C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		B087253124C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineHistoryDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		B087253524C63796007F8721 /* HistoryViewController +UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController +UITableView.swift"; sourceTree = "<group>"; };
+		B094694E24C6D910003EA1DA /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		B094695024C6D9D5003EA1DA /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		B094695224C6DE81003EA1DA /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		B09BEBF024C5E98A001C126C /* HistoryViewController+FSCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController+FSCalendar.swift"; sourceTree = "<group>"; };
 		B0D8D52F24C5774F00A77E93 /* MediMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D8D53224C5774F00A77E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +101,7 @@
 		B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		B0F7D8B824C5BCCE00600D29 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B0F7D8BA24C5C7A300600D29 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EE886C2078F0CDF5AAF59F9E /* Pods_MediMinder_MediMinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediMinder_MediMinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F7D8C324C5E84500600D29 /* Pods_MediMinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7C564CFB095C64D54BACA7 /* Pods_MediMinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +125,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0437E2ED65896FA7C5C794F9 /* Pods_MediMinder_MediMinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51DAC6607EDB9B914CF6EB99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C98D89A065B05983B78DC3D /* Pods_MediMinder.framework */,
+				EE886C2078F0CDF5AAF59F9E /* Pods_MediMinder_MediMinderUITests.framework */,
+				93CAD3992B8637712E13E627 /* Pods_MediMinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B087252E24C630A1007F8721 /* XIBS */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */,
+				B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */,
+			);
+			path = XIBS;
+			sourceTree = "<group>";
+		};
+		B087252F24C630B1007F8721 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B087253024C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.swift */,
+				B087253124C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B087253424C6377B007F8721 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7D8B024C5A58B00600D29 /* HomeViewController.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		B09BEBEF24C5E966001C126C /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */,
+				B09BEBF024C5E98A001C126C /* HistoryViewController+FSCalendar.swift */,
+				B087253524C63796007F8721 /* HistoryViewController +UITableView.swift */,
+			);
+			path = HistoryVC;
+			sourceTree = "<group>";
+		};
 		B0D8D52624C5774F00A77E93 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +185,8 @@
 				B0D8D54B24C5775300A77E93 /* MediMinderTests */,
 				B0D8D55624C5775400A77E93 /* MediMinderUITests */,
 				B0D8D53024C5774F00A77E93 /* Products */,
+				D67F5546113B6FE3665E2D56 /* Pods */,
+				51DAC6607EDB9B914CF6EB99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +237,7 @@
 		B0D8D56524C57AE400A77E93 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B094695024C6D9D5003EA1DA /* Medicine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,8 +245,8 @@
 		B0D8D56624C57AF500A77E93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B0F7D8B124C5A58B00600D29 /* HomeViewController.xib */,
-				B0F7D8B524C5A5B200600D29 /* HistoryViewController.xib */,
+				B087252F24C630B1007F8721 /* TableViewCells */,
+				B087252E24C630A1007F8721 /* XIBS */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,9 +254,9 @@
 		B0D8D56724C57B0300A77E93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B087253424C6377B007F8721 /* HomeVC */,
+				B09BEBEF24C5E966001C126C /* HistoryVC */,
 				B0F7D8AA24C57E6C00600D29 /* BaseNavigationController.swift */,
-				B0F7D8B024C5A58B00600D29 /* HomeViewController.swift */,
-				B0F7D8B424C5A5B200600D29 /* HistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +268,7 @@
 				B0D8D53424C5774F00A77E93 /* SceneDelegate.swift */,
 				B0F7D8B824C5BCCE00600D29 /* Utils.swift */,
 				B0F7D8BA24C5C7A300600D29 /* Enums.swift */,
+				B094694E24C6D910003EA1DA /* DefaultsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -182,8 +276,22 @@
 		B0D8D56924C57B2100A77E93 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B094695224C6DE81003EA1DA /* Date+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D67F5546113B6FE3665E2D56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C392FCB725DE490C7F419B9 /* Pods-MediMinder.debug.xcconfig */,
+				21370FF14D5BA603C9D1C7EA /* Pods-MediMinder.release.xcconfig */,
+				754CD8CD11CACF1BA50BD4BD /* Pods-MediMinder-MediMinderUITests.debug.xcconfig */,
+				7524B137FE81E0D697DFEC82 /* Pods-MediMinder-MediMinderUITests.release.xcconfig */,
+				468D31E37F6308BAEFA6E55B /* Pods-MediMinderTests.debug.xcconfig */,
+				0E03E71EAFA4F9D0B3783B30 /* Pods-MediMinderTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D8D55C24C5775400A77E93 /* Build configuration list for PBXNativeTarget "MediMinder" */;
 			buildPhases = (
+				1385A721CAFADF4B6BA80C83 /* [CP] Check Pods Manifest.lock */,
 				B0D8D52B24C5774F00A77E93 /* Sources */,
 				B0D8D52C24C5774F00A77E93 /* Frameworks */,
 				B0D8D52D24C5774F00A77E93 /* Resources */,
+				6EDE2BAC5F9F4CCDA13F8587 /* [CP] Embed Pods Frameworks */,
+				B0F7D8C524C5E84500600D29 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D8D55F24C5775400A77E93 /* Build configuration list for PBXNativeTarget "MediMinderTests" */;
 			buildPhases = (
+				79F1FE72B0A2653A28C2294B /* [CP] Check Pods Manifest.lock */,
 				B0D8D54424C5775300A77E93 /* Sources */,
 				B0D8D54524C5775300A77E93 /* Frameworks */,
 				B0D8D54624C5775300A77E93 /* Resources */,
@@ -228,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D8D56224C5775400A77E93 /* Build configuration list for PBXNativeTarget "MediMinderUITests" */;
 			buildPhases = (
+				981D6A260A824A17314558BA /* [CP] Check Pods Manifest.lock */,
 				B0D8D54F24C5775400A77E93 /* Sources */,
 				B0D8D55024C5775400A77E93 /* Frameworks */,
 				B0D8D55124C5775400A77E93 /* Resources */,
+				33E02C584A259631C286BD2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +408,7 @@
 				B0D8D53F24C5775300A77E93 /* Assets.xcassets in Resources */,
 				B0F7D8B324C5A58B00600D29 /* HomeViewController.xib in Resources */,
 				B0F7D8B724C5A5B200600D29 /* HistoryViewController.xib in Resources */,
+				B087253324C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,16 +428,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1385A721CAFADF4B6BA80C83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediMinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E02C584A259631C286BD2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediMinder-MediMinderUITests/Pods-MediMinder-MediMinderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediMinder-MediMinderUITests/Pods-MediMinder-MediMinderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediMinder-MediMinderUITests/Pods-MediMinder-MediMinderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EDE2BAC5F9F4CCDA13F8587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediMinder/Pods-MediMinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediMinder/Pods-MediMinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediMinder/Pods-MediMinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F1FE72B0A2653A28C2294B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediMinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981D6A260A824A17314558BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediMinder-MediMinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0D8D52B24C5774F00A77E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B0D8D53D24C5774F00A77E93 /* MediMinder.xcdatamodeld in Sources */,
+				B094695124C6D9D5003EA1DA /* Medicine.swift in Sources */,
+				B087253224C630D8007F8721 /* MedicineHistoryDetailsTableViewCell.swift in Sources */,
+				B087253624C63796007F8721 /* HistoryViewController +UITableView.swift in Sources */,
 				B0F7D8B224C5A58B00600D29 /* HomeViewController.swift in Sources */,
 				B0F7D8B924C5BCCE00600D29 /* Utils.swift in Sources */,
 				B0D8D53324C5774F00A77E93 /* AppDelegate.swift in Sources */,
+				B094695324C6DE81003EA1DA /* Date+.swift in Sources */,
 				B0F7D8AB24C57E6C00600D29 /* BaseNavigationController.swift in Sources */,
+				B094694F24C6D910003EA1DA /* DefaultsManager.swift in Sources */,
+				B09BEBF124C5E98A001C126C /* HistoryViewController+FSCalendar.swift in Sources */,
 				B0F7D8B624C5A5B200600D29 /* HistoryViewController.swift in Sources */,
 				B0F7D8BB24C5C7A300600D29 /* Enums.swift in Sources */,
 				B0D8D53524C5774F00A77E93 /* SceneDelegate.swift in Sources */,
@@ -488,6 +712,7 @@
 		};
 		B0D8D55D24C5775400A77E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C392FCB725DE490C7F419B9 /* Pods-MediMinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +731,7 @@
 		};
 		B0D8D55E24C5775400A77E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21370FF14D5BA603C9D1C7EA /* Pods-MediMinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +750,7 @@
 		};
 		B0D8D56024C5775400A77E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468D31E37F6308BAEFA6E55B /* Pods-MediMinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +772,7 @@
 		};
 		B0D8D56124C5775400A77E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E03E71EAFA4F9D0B3783B30 /* Pods-MediMinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +794,7 @@
 		};
 		B0D8D56324C5775400A77E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754CD8CD11CACF1BA50BD4BD /* Pods-MediMinder-MediMinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +814,7 @@
 		};
 		B0D8D56424C5775400A77E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7524B137FE81E0D697DFEC82 /* Pods-MediMinder-MediMinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
