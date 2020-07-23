@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().getPendingNotificationRequests { (notifications) in
+            if notifications.isEmpty {
+                LocalNotificationsManager.generateNotifications()
+            }
+        }
         return true
     }
 
@@ -62,6 +68,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
 
+    func generateNotifications() {
+        let notificationManager = LocalNotificationsManager()
+        notificationManager.notifications = [
+            Notification(id: Greetings.morning.notificationId, title: Greetings.morning.notificationText, dateTime: Greetings.morning.medicineTime),
+            Notification(id: Greetings.afternoon.notificationId, title: Greetings.afternoon.notificationText, dateTime: Greetings.afternoon.medicineTime),
+            Notification(id: Greetings.evening.notificationId, title: Greetings.evening.notificationText, dateTime: Greetings.evening.medicineTime)
+        ]
+        notificationManager.schedule()
+    }
+    
     // MARK: - Core Data Saving support
 
     func saveContext () {

@@ -57,7 +57,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func setupTabBars() {
         let homeViewController = HomeViewController()
         homeViewController.title = "Home"
-        homeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 0)
+        let homeTabButton = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home.pdf"), tag: 0)
+        homeViewController.tabBarItem = homeTabButton
         
         let historyViewController = HistoryViewController()
         historyViewController.title = "History"

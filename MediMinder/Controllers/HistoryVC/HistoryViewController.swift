@@ -13,7 +13,7 @@ class HistoryViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var calendar: FSCalendar!
-
+    
     var medicineHistory: [Dictionary<Date, [Medicine]>.Element]? {
         didSet {
             tableView.reloadData()
@@ -31,10 +31,10 @@ class HistoryViewController: UIViewController {
         medicineHistory = DefaultManager.sharedInstance.fetchMedicineHistory()
     }
     
-    
     func setupCalendar() {
         
         calendar.scope = .week
+        calendar.allowsSelection = true
         calendar.setCurrentPage(Date(), animated: true)
         calendar.scrollDirection = .horizontal
     }
@@ -46,6 +46,9 @@ class HistoryViewController: UIViewController {
         tableView.register(UINib(nibName: "MedicineHistoryDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: MedicineHistoryDetailsTableViewCell.reuseIdentifier)
     }
     
+    
+    /// Navigate to the previous week
+    /// - Parameter sender: UIButton
     @IBAction func previousWeekAction(_ sender: UIButton) {
         
         if let previousDate = calendar.selectedDate?.addingTimeInterval(-60*60*24*7) {
@@ -55,10 +58,13 @@ class HistoryViewController: UIViewController {
         }
     }
     
+    
+    /// Navigate to the next week
+    /// - Parameter sender: UIButton
     @IBAction func nextWeekAction(_ sender: UIButton) {
         
-        if let previousDate = calendar.selectedDate?.addingTimeInterval(60*60*24*7) {
-            calendar.select(previousDate, scrollToDate: true)
+        if let nextDate = calendar.selectedDate?.addingTimeInterval(60*60*24*7) {
+            calendar.select(nextDate, scrollToDate: true)
         } else {
             calendar.select(Date().addingTimeInterval(60*60*24*7), scrollToDate: true)
         }

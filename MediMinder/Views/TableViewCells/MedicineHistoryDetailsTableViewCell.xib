@@ -66,8 +66,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16J-Zb-K7C">
-                                        <rect key="frame" x="10.5" y="73.5" width="34" height="63.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16J-Zb-K7C">
+                                        <rect key="frame" x="24" y="73.5" width="7" height="63.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,8 +89,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH2-o6-8fe">
-                                        <rect key="frame" x="16.5" y="73.5" width="34" height="63.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH2-o6-8fe">
+                                        <rect key="frame" x="30" y="73.5" width="7" height="63.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -112,8 +112,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-bx-n9z">
-                                        <rect key="frame" x="18" y="73.5" width="34" height="63.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-bx-n9z">
+                                        <rect key="frame" x="31.5" y="73.5" width="7" height="63.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -125,9 +125,17 @@
                             <constraint firstItem="tBg-mG-SIz" firstAttribute="leading" secondItem="1Bw-Zc-dYs" secondAttribute="leading" constant="96" id="a1q-h5-guC"/>
                         </constraints>
                     </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-9g-fgF">
+                        <rect key="frame" x="275.5" y="18" width="28.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.70588235290000001" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="dqI-vH-bd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3ud-al-ce3"/>
+                    <constraint firstAttribute="trailing" secondItem="vbH-9g-fgF" secondAttribute="trailing" constant="16" id="JoL-Ib-eYv"/>
+                    <constraint firstItem="vbH-9g-fgF" firstAttribute="centerY" secondItem="dqI-vH-bd0" secondAttribute="centerY" id="Lhu-g1-XCV"/>
                     <constraint firstAttribute="trailing" secondItem="1Bw-Zc-dYs" secondAttribute="trailing" constant="8" id="TBQ-1x-l0Q"/>
                     <constraint firstItem="1Bw-Zc-dYs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TaI-m2-wCU"/>
                     <constraint firstItem="1Bw-Zc-dYs" firstAttribute="top" secondItem="dqI-vH-bd0" secondAttribute="bottom" constant="8" id="YVZ-9B-YjJ"/>
@@ -147,6 +155,7 @@
                 <outlet property="morningMedicineConsumedTime" destination="16J-Zb-K7C" id="9E3-Re-qkh"/>
                 <outlet property="morningMedicineScheduledTime" destination="866-L2-Yd0" id="pLQ-0Y-k1M"/>
                 <outlet property="morningStackView" destination="tBg-mG-SIz" id="Ts7-YK-Yrx"/>
+                <outlet property="scoreLabel" destination="vbH-9g-fgF" id="hgc-49-QYx"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="100.11160714285714"/>
         </tableViewCell>

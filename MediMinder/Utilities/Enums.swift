@@ -11,20 +11,17 @@ import Foundation
 public enum Greetings {
     
     case morning
-    case noon
     case afternoon
     case evening
     
     var label: String {
         switch self {
         case .morning:
-            return "Good Morning !!!"
-        case .noon:
-            return "Good noon !!!"
+            return "Good Morning 🌅"
         case .afternoon:
-            return "Good Afternoon !!!"
-        case .evening:
-            return "Good Evening !!!"
+            return "Good Afternoon ☀️"
+        case .evening :
+            return "Good Evening 🌄"
         }
     }
     
@@ -32,10 +29,47 @@ public enum Greetings {
         switch self {
         case .morning:
             return 30
-        case .noon, .afternoon:
+        case .afternoon:
             return 30
         case .evening:
             return 40
+        }
+    }
+    
+    var medicineTime: DateComponents {
+        var date = DateComponents()
+        date.minute = 0
+        date.second = 0
+        switch self {
+        case .morning:
+            date.hour = 8
+        case .afternoon:
+            date.hour = 13
+        case .evening:
+            date.hour = 20
+        }
+        return date
+    }
+    
+    var notificationText: String {
+        switch  self {
+        case .morning:
+            return "Time for morning medicine."
+        case .afternoon:
+            return "Time for afternoon medicine"
+        case .evening:
+            return "Time for evening medicine"
+        }
+    }
+    
+    var notificationId: String {
+        switch self {
+        case .morning:
+            return "1"
+        case .afternoon:
+            return "2"
+        case .evening:
+            return "3"
         }
     }
     
@@ -65,10 +99,8 @@ extension Greetings: Codable {
         case 0:
             self = .morning
         case 1:
-            self = .noon
-        case 2:
             self = .afternoon
-        case 3:
+        case 2:
             self = .evening
         default:
             throw CodingError.unknownValue
@@ -80,12 +112,10 @@ extension Greetings: Codable {
         switch self {
         case .morning:
             try container.encode(0, forKey: .rawValue)
-        case .noon:
-            try container.encode(1, forKey: .rawValue)
         case .afternoon:
-            try container.encode(2, forKey: .rawValue)
+            try container.encode(1, forKey: .rawValue)
         case .evening:
-            try container.encode(3, forKey: .rawValue)
+            try container.encode(2, forKey: .rawValue)
         }
     }
     

@@ -16,9 +16,7 @@ final class Utils {
         switch hour {
         case 5..<12:
             return Greetings.morning
-        case 12:
-            return Greetings.noon
-        case 13...16:
+        case 12...16:
             return Greetings.afternoon
         default:
             return Greetings.evening
@@ -29,7 +27,7 @@ final class Utils {
         switch  dayTime {
         case .morning:
             return "11:00 AM"
-        case .noon, .afternoon:
+        case .afternoon:
             return "2:00 PM"
         case .evening:
             return "8:00 PM"

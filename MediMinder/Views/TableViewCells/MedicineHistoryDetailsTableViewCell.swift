@@ -13,7 +13,7 @@ class MedicineHistoryDetailsTableViewCell: UITableViewCell {
     static let reuseIdentifier = "MedicineHistoryDetailsTableViewCell"
     
     @IBOutlet weak var medicineHistoryDateLabel: UILabel!
-    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var morningStackView: UIStackView!
     @IBOutlet weak var afternoonStackView: UIStackView!
     @IBOutlet weak var eveningStackView: UIStackView!

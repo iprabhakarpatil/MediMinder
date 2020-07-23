@@ -25,12 +25,14 @@ extension HistoryViewController: UITableViewDataSource {
             assert(false, "Failed to initialise the cell.")
             return UITableViewCell()
         }
-        cell.medicineHistoryDateLabel.text = medicineHistory[indexPath.row].key.dateToString()
+        let medicine = medicineHistory[indexPath.row]
+        cell.medicineHistoryDateLabel.text = medicine.key.dateToString()
+        cell.scoreLabel.text = "\(medicine.value.reduce(0) { $0 + $1.score })"
         medicineHistory[indexPath.row].value.forEach { (medicine) in
             switch medicine.medicineDayTime {
             case .morning:
                 cell.morningMedicineConsumedTime.text = medicine.medicineConsumedTime
-            case .noon, .afternoon:
+            case .afternoon:
                 cell.afternoonMedicineConsumedTime.text = medicine.medicineConsumedTime
             case .evening:
                 cell.eveningMedicineConsumedTime.text = medicine.medicineConsumedTime
